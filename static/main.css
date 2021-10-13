@@ -1,0 +1,478 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+body, html {
+  margin: 0;
+	padding: 0;
+	background-color:#E0E7FF ;
+    }
+
+.navbar {
+ 	background-color: #363945;
+ 	height: 100px;
+  	}
+
+ .logo {
+ 	width: 150px;
+ 	float: left;
+ 	overflow: auto;
+ 	position: relative;
+ 	left: 250px;
+ 	bottom: 20px;
+ }
+
+ .alignl {
+ 	margin-right: 20%;
+ }
+
+ .shadowbox-nav a p {
+ 	color: white;
+ 	float: left;
+ 	padding-left: 200px;
+ 	font-size: 30px;
+ 	margin-top: 15px;
+ }
+
+ .shadowbox-nav {
+ 	box-shadow: 6px 6px 6px 6px #888888;
+ }
+
+ .height-100 {
+ 	height: 100px;
+ }
+
+ .height-130 {
+ 	height: 130px;
+ }
+
+ .main-text {
+ 	text-align: center;
+ 	color: #363945;
+ 	font-size: 40px;
+ }
+
+.normal-text {
+ 	text-align: center;
+ 	color: #363945;
+ 	font-size: 30px;
+ }
+
+ .strings-form {
+ 	margin-top: 20px;
+ 	width: 90%;
+ 	height: 300px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px 2px #363945;
+	border: 3px solid #363945;
+	border-radius: 4px;
+	resize: none;
+	font-size: 20px;
+	color: #363945;
+ }
+
+.form-box {
+	margin-left: 25%;
+	margin-right: 25%;
+	box-sizing: border-box;
+	height: 780px;
+}
+
+.mgu-18-mud-12 {
+	margin-top: 18px;
+	margin-bottom: 12px;
+}
+
+.submit-bt {
+	text-align: center;
+	font-size: 25px;
+	color: #363945;
+	box-sizing: border-box;
+	border: 2px solid #363945;
+	cursor: pointer;
+	padding: 12px;
+	width: 300px;
+	border-radius: 25px;
+	background-color: white;
+}
+
+.submit-bt:hover {
+	background-color: #E0E7FF;
+}
+
+.mgd50 {
+	margin-bottom: 50px;
+}
+
+.mgu120 {
+	margin-top: 120px;
+}
+
+.mgup50 {
+	margin-top: 50px;	
+}
+
+.mgup70 {
+	margin-top: 70px;	
+}
+
+.font50 {
+	font-size: 50px;
+}
+
+.mgR70 {
+	margin-right: 70px;	
+}
+
+
+.saiba-box {
+	padding: 2px 20px;
+	box-sizing: border-box;
+	box-shadow: 6px 6px 6px 6px #888888;
+	transition: 0.5s;
+	background-color: white;
+	height: auto;
+  margin: auto;
+	width: 600px;
+}
+
+
+.div-saiba-box{
+	height: 250px;
+}
+
+.div-saiba-box:after {
+        background-color: inherit;
+        padding-top: 130px;
+        display: block;
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.saiba-box:hover {
+	box-shadow: 4px 4px 4px 4px #E0E7FF ;
+	cursor: pointer;
+}
+
+.saiba-icon {
+	padding-top: 8px;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: 60px;
+}
+
+.mgup20 {
+	margin-top: 25px;
+}
+
+.font25 {
+	font-size: 25px;
+}
+
+.padl2 {
+	padding-left: 2px;
+}
+
+.padup-25 {
+	padding-top: 25px;
+}
+
+.padr2 {
+	padding-right: 2px;
+}
+
+.by {
+	float: right;
+	padding-right: 100px;
+	padding-top: 10px;
+	font-size: 16px;
+	color: white;
+	margin:  0px;
+}
+
+.span-by {
+	display: block;
+}
+
+
+.copiright {
+	color: white;
+ 	margin: 0;
+ 	padding-left: 150px;
+ 	font-size: 20px;
+ 	float: left;
+ 	padding-top: 20px;
+}
+
+.border-saiba-box {
+	border-top: 2px solid #363945;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 15px;
+}
+
+.box-aviso {
+	align-content: center;
+	box-sizing: border-box;
+	border-left: 30px solid #363945;
+	height: auto;
+  margin: auto;
+	width: 850px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	background-color: white;
+	position: relative;
+}
+
+.texto-aviso {
+	padding: 13px 13px 13px 2%;
+ 	color: #363945;
+ 	font-size: 24px;
+ }
+
+.div-box-aviso:after {
+	background-color: inherit;
+	padding-top: 60px;
+	display: block;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.pix {
+	font-size: 50px;
+	width: 150px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.span-pix {
+	display: block;
+	transition: 2s;
+	font-size: 16px;
+}
+
+.wid300 {
+	margin: auto;
+	transition: 1s;
+	width: 50%;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.box-download {
+  position: relative;
+  margin: auto;
+  animation-name: download-box;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+  overflow-y: scroll;
+}
+
+.download-text {
+	word-wrap: break-word;
+	font-size: 45px;
+	margin:  0px;
+}
+
+.downloading {
+	animation-name: download;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+table {
+	border-collapse: collapse;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+tr {
+	font-size: 20px;
+	color: #363945;
+	text-align: center;
+}
+
+.infos > th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.table-title {
+	font-size: 28px;
+	color:  #363945;
+	border-bottom: 2px solid #363945;
+	padding-bottom: 0px;
+}
+
+.padr10 {
+	padding-right: 10px;
+}
+
+.padl10 {
+	padding-left: 10px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.buton-down:hover {
+	text-shadow: 2px 2px 6px white;
+	box-shadow: 2px 2px 6px white;
+}
+
+.buton-down {
+	background-color: none;
+	cursor: pointer;
+	color:  #363945;
+	font-size: 18px;
+	border: 2px solid #363945;
+	padding: 5px;
+	margin-right: 10px;
+	box-shadow: 2px 2px 6px #000000;
+	transition: 0.7s;
+	box-sizing: border-box;
+}
+
+
+.flash {
+	padding: 15px;
+	box-sizing: border-box;
+	box-shadow: 6px 6px 6px 6px #888888;
+	background-color: #ffca42;
+	height: auto;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+	width: 600px;
+}
+
+.icones-span {
+	color: white;
+	font-size:30px;
+	transition: 1s;
+}
+
+.linkdin {
+	padding-top: 15px;
+	margin-left: 18%;
+}
+
+.github {
+	margin-left: 1%;
+}
+
+.portfolio {
+	color: white;
+	padding-left: 18px;
+	transition: 1s;
+}
+
+.icones-span:hover, .portfolio:hover {
+	color: #E0E7FF;
+	cursor: pointer;
+}
+
+
+/*-----------------------  KEYFRAMES  ------------------*/
+
+@keyframes download-box {
+  from {
+  	width: 0px;
+  	height: 0px;
+  	background-color: white;
+  	border: 4px inset white;
+  }
+  to {
+  	border: 4px inset white;
+  	width: 1000px;
+  	background-color: white;
+  	height: 500px;
+  }
+}
+
+@keyframes download {
+  from {
+    color: #363945
+  }
+  to {
+    color: white;
+  }
+}
+
+
+/*-----------------------  SCROLLBAR  ------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #363945; 
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+
+
+
+
+/* MODAL */
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  width: 55%;
+  top:  15%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

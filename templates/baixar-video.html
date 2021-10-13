@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+	  <div class="align-left modal-content box-aviso normal-text">
+	    <span class="close" onclick="fechar_modal()" >&times; </span>
+	    <p>O VMTube sempre será gratuito, mas se quiser contribuir para aumentar o limite do servidor para downloads, faz um <b>PIX!</b><br><br>
+
+	    <p class="normal-text"><strong>PIX: contatovmtube@gmail.com</strong>
+			<span class="span-pix">(Victor Saraiva Rocha)</span>
+		</p>
+	  </div>
+
+	</div>
+
+	<div>
+		<p class="alignl main-text">Beleza, agora é só clicar em <strong>Download</strong>.</p>
+	</div>
+
+	<div class="box-download">
+
+		<table>
+			<tr class='table-title'>
+				<th class="">Título</th>
+				<th class="padr10">Size</th>
+				<th class="padl10">Resolução</th>
+				<th class=""></th>
+			</tr>
+
+			{% for download in downloads %}
+
+			<tr class="infos">
+				<th> {{ download.titulo }} </th>
+				<th> {{ download.size }} </th>
+				<th> {{ download.resolucao }} </th>
+				<th> 
+					<a href="{{ url_for('download_file', name=download.filename)}}" download>
+					  <button type="button" class='buton-down'>Download</button>
+					</a>
+				</th>
+			</tr>
+
+			{% endfor %}
+
+		</table>
+	</div>
+	<div class="height-130">
+	</div>
+{% endblock content %}

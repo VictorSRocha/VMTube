@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<div class="flash normal-text">
+					<strong>{{ message }}</strong>
+				</div>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+
+
+	<br><br>
+	<div>
+		<div class='form-div'>
+			<h1 class="main-text">Baixe várias músicas e vídeos do Youtube de uma vez!</h1>
+			<form class='normal-text' method="POST" enctype='multipart/form-data'>
+				{{ form.hidden_tag() }}
+				<div class='form-box' id='box-form'>
+					<div>
+						<p style="font-size: 17px;"><br></p>
+						<b>{{ form.videos.label }}</b>	
+					</div>
+
+					{{ form.videos(class='strings-form mgup50') }}
+
+					<p><br><strong>Selecione o formato do download:</strong></p>
+
+					<input type="radio" id="mp3" name="formato" value="mp3">
+					<label class='main-text mgR70' for="mp3">Música</label>
+
+					<input type="radio" id="mp4" name="formato" value="mp4" checked>
+					<label class='main-text' for="mp4">Vídeo</label>
+
+
+					<br><br>
+
+					{{ form.submit(class='submit-bt mgu-18-mud-12', id='enviar', onclick='some_botao()')}}
+
+				</div>
+			</form>
+		</div>
+		<div class='main-text mgu120 font50'>
+			Como baixar?
+		</div>
+		<div class="normal-text mgup50 mgd50">É muito fácil baixar todas suas músicas e vídeos favoritos:</div>
+		<div class="div-saiba-box">
+			<a href="https://www.youtube.com/watch?v=AYpWyMTu4Js" target="_blank">
+				<div class="saiba-box mgup70">
+					<p class="font25 padl2 padr2 normal-text">Cole cada URL em uma linha no box acima e clique em enviar, o resto é com a gente.</p>
+					<p class="font25 padl2 padr2 normal-text border-saiba-box">Caso queira um passo a passo é só clicar.</p>
+				</div>
+			</a>
+		</div>
+		<p class="normal-text"><strong>Fique tranquile é totalmente gratuito e seguro!</strong> <br><br><br>
+		Além disso, sou a favor da disseminação de conhecimento, portanto, <br>
+		<strong>todo o código</strong> está disponível no <a href="https://github.com/VictorSRocha/VMTube" target='_blank'><strong>github</strong></a> à todos.</p> <br><br><br>
+
+		<div class="div-box-aviso">
+			<div class="texto-aviso box-aviso">
+				Informo que devido ao limite de <strong>1GB</strong> no servidor para armazenamento limitei a resolução dos vídeos para <strong>720p.</strong><br><br>
+				Caso queira apoiar para aumentar o limite de espaço, faz um <strong>PIX!</strong> Desde já agradeço pelo apoio! <br><br>
+				Ah! Não esqueça de colocar seu nome, assim poderei agradecer!<br>
+
+				<p class="normal-text"><strong>PIX: contatovmtube@gmail.com</strong>
+					<span class="span-pix">(Victor Saraiva Rocha)</span>
+				</p>
+			</div><br><br><br>
+			
+		</div>
+
+	</div>
+{% endblock content %}

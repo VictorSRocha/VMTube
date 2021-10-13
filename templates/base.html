@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+
+	<script type=text/javascript src="{{ url_for('static', filename='main.js') }}/"></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	
+	<title>VMTube</title>
+
+	<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div class="navbar shadowbox-nav">
+		<a href="{{ url_for('main_page') }}">
+			<img class='logo' src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
+		</a>
+	</div>
+	
+	{% block content %}
+	{% endblock content %}	
+
+	<div class="padup-25 height-100 navbar">
+		
+		<p class='copiright'>© 2021</p>
+			<span>
+				<a class='icones-span' href="https://www.linkedin.com/in/victorsaraivarocha/" target="_blank">
+					<i class="linkdin fa">&#xf08c;</i>
+				</a>
+				<a class='icones-span' href="https://github.com/VictorSRocha" target="_blank">
+					<i class="github fa">&#xf113;</i>
+				</a>
+			</span>
+			<a class="portfolio" href="https://victorsrocha.github.io/" target="_blank">
+				<span>Portfólio</span>
+			</a>
+
+		<div class='by'>
+			by: Victor Saraiva Rocha	
+			<span class="span-by">
+				victorsaraiva.contato@gmail.com
+			</span>
+		</div>
+	</div>
+</body>
+</html>
