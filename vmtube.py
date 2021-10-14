@@ -13,15 +13,15 @@ import io
 
 vmtube = Flask(__name__)
 
-DOWNLOADS_PATH = r'C:\vmtube\downloads\\'
-ALLOWED_DOMAINS = ['.youtube.com']
+DOWNLOADS_PATH = r'\vmtube\downloads\\'
+ALLOWED_DOMAINS = ['.youtube.com', 'youtu.be']
 IMAGE_PATH = os.path.join('static', 'img')
 SERVER_LIMIT = int(900)
 
-vmtube.config['SECRET_KEY'] = '5e17d6498ed3a6df051803ab6c2267b1371jfh890gh05c93fjgh'
+vmtube.config['SECRET_KEY'] = 'sua chave secreta'
 
 # MySQL Database
-vmtube.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:meuserver@123@localhost/videos'
+vmtube.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:senha usuário@localhost/database'
 
 videos_db = SQLAlchemy(vmtube)
 
