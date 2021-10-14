@@ -1,11 +1,16 @@
 from pytube import YouTube
+import re
+
 
 def url_validation(URL, dominios):
 	for video in URL:
 		for dominio in dominios:
-			if (dominio not in video):
-				return video
-
+			if not (re.search(dominio, video)):
+			    validacao = False
+			else:
+			    validacao = True
+	if not validacao:
+	    return video
 
 def download_validation(URL):
 	for video in URL:
